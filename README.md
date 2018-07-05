@@ -40,11 +40,11 @@ I'll tell you about the configuration using the IDE PHPStorm as an example. We i
 
 As I said, everything should be developed in an environment or an identical web hosting or very close to it. To do this, we need to install VirtualBox on our computer by downloading it from the official site (<https://www.virtualbox.org> ). Here, too, there is nothing complicated, set and reboot the computer.  
 
-###### Then there are two ways of development. 
+##### Then there are two ways of development. 
 
-<u>The first way</u> is to create a virtual machine inside VirtualBox manually, install Linux Server into it, raise Apache, MySQL and PHP on the server. Further for debugging to us there it will be necessary to install Xdebug for debugging PHP, simultaneously having understood with dependencies inside the virtual machine and also to consider dependencies with our working folder on the host machine. When you gain experience, it's not so difficult to do as it seems, but for those who are just making their first steps toward WEB development, these are all not necessary complications.
+**The first way** is to create a virtual machine inside VirtualBox manually, install Linux Server into it, raise Apache, MySQL and PHP on the server. Further for debugging to us there it will be necessary to install Xdebug for debugging PHP, simultaneously having understood with dependencies inside the virtual machine and also to consider dependencies with our working folder on the host machine. When you gain experience, it's not so difficult to do as it seems, but for those who are just making their first steps toward WEB development, these are all not necessary complications.
 
-Therefore, there is a <u>second path</u> of development. Install on your computer Vagrant, downloading it from the official site (<http://www.vagrantup.com/downloads.html> ). Vagrant is an application that helps you manage virtual machines. Installed? If you receive an error about the incompatibility of the PowerShell version, then update the Management Framework (<https://www.microsoft.com/en-US/download/details.aspx?id=50395> ). Installed? Excellent.
+Therefore, there is a **second path** of development. Install on your computer Vagrant, downloading it from the official site (<http://www.vagrantup.com/downloads.html> ). Vagrant is an application that helps you manage virtual machines. Installed? If you receive an error about the incompatibility of the PowerShell version, then update the Management Framework (<https://www.microsoft.com/en-US/download/details.aspx?id=50395> ). Installed? Excellent.
 
 
 Then we download the archive with the vagrant configuration, which I prepared on the basis of "Ubuntu Server 16.04" and which I propose to use to my students. We create a working folder, in which we will create our site. For example, this will be the folder **"webdev"** on drive **"C"**. How to do it? For those who already installed Git, open the "C" drive in the explorer and right-click and select **"Git Bash Here"**.
@@ -59,7 +59,7 @@ After that, you had our finished working folder on the disk with this file tree:
 
    ![webdev tree](http://www.lpdis.ru/phpstart/tree.jpg)
 
-I want to draw your attention to the fact that the folder with our site, which we will develop, is located along this path: **C:\webdev\www\webdev.local **
+I want to draw your attention to the fact that the folder with our site, which we will develop, is located along this path: **C:\webdev\www\webdev.local**
 
 In the future, you will be able to replace all files in this folder with files on your site and get a ready development environment for your site.
 
@@ -150,7 +150,7 @@ A window like this appears where you can see the PHP version and the debugger ve
 
 
 
-Next, in the PHP section, select  **Servers (PHP -> Servers)**. Click on the green "+" and enter any name, for example "webdev.local" and the name of the host: "webdev.local". The port number is left "80" and the debugger specifies "XDebug". Be sure to include the checkbox **Use path mappings… ** to indicate the correspondence paths:
+Next, in the PHP section, select  **Servers (PHP -> Servers)**. Click on the green "+" and enter any name, for example "webdev.local" and the name of the host: "webdev.local". The port number is left "80" and the debugger specifies "XDebug". Be sure to include the checkbox **Use path mappings…** to indicate the correspondence paths:
 
 |       File/Directory       | Absolute patch on the server |
 | :------------------------: | :--------------------------: |
