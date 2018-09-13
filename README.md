@@ -6,7 +6,7 @@ Files for getting a working environment for web developers based on the ubuntu s
 
 **(article is published on  https://www.linkedin.com/pulse/configure-development-environment-learning-html-css-php-panov/ )**
 
- ![web - developer PHPStorm and Vagrant](http://www.lpdis.ru/phpstart/0.jpg)
+ ![web - developer PHPStorm and Vagrant](http://www.panovs.com/alex/article/phpstart/0.jpg)
 
 
 Beginning programmers always ask the question, where to start learning about creating websites? Search on the Internet gives a lot of various information, but unfortunately only more confuses novice developers. Having more than 5 years of teaching experience, I have seen many times how students, making breaks in computer games and deciding to become web developers, tried to customize development environments. They began to sort out the programs for layout. They grabbed Sublime Text, Notepad ++, Visual Studio Code, NetBeans or PHPStorm. We tried to install on our local computer WAMP (stands for Windows, Apache, MySQL and PHP) platforms, such as Denver, Xampp, Open Server and many others. But since there is no systematic knowledge in the head of a novice developer, there is no experience of customization, it was rare for some of them to set up a convenient development environment, and whoever got it, understood that it became more difficult to play, since many additional programs, smoothness in the game.
@@ -49,15 +49,15 @@ Therefore, there is a **second path** of development. Install on your computer V
 
 Then we download the archive with the vagrant configuration, which I prepared on the basis of "Ubuntu Server 16.04" and which I propose to use to my students. We create a working folder, in which we will create our site. For example, this will be the folder **"webdev"** on drive **"C"**. How to do it? For those who already installed Git, open the "C" drive in the explorer and right-click and select **"Git Bash Here"**.
 
-​                                 ![Panov. Git Bash Here](http://www.lpdis.ru/phpstart/git-1.jpg)                 
+​                                 ![Panov. Git Bash Here](http://www.panovs.com/alex/article/phpstart/git-1.jpg)                 
 
 A console will open in which you enter the command: **git clone <https://github.com/abyss-soft/webdev>** and click "enter".
 
-   ![webdev](http://www.lpdis.ru/phpstart/git-2.jpg)
+   ![webdev](http://www.panovs.com/alex/article/phpstart/git-2.jpg)
 
 After that, you had our finished working folder on the disk with this file tree:
 
-   ![webdev tree](http://www.lpdis.ru/phpstart/tree.jpg)
+   ![webdev tree](http://www.panovs.com/alex/article/phpstart/tree.jpg)
 
 I want to draw your attention to the fact that the folder with our site, which we will develop, is located along this path: **C:\webdev\www\webdev.local**
 
@@ -117,36 +117,36 @@ If everything went as expected, we'll see a page with the text *«PHP calculatin
 
 To do this, run PHPStorm and create a new project:
 
-   ![www.lpdis.ru PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-1.jpg)
+   ![www.lpdis.ru PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-1.jpg)
 
 The program tells us that there are already files in this folder and will ask if we want to create a project in this folder:
 
-   ![A. Panov](http://www.lpdis.ru/phpstart/PHPStorm-2.jpg)
+   ![A. Panov](http://www.panovs.com/alex/article/phpstart/PHPStorm-2.jpg)
 
 Click "Yes"
 
 
 Then click on the menu «File»-> «Settings..»:
 
-   ![Panov A.](http://www.lpdis.ru/phpstart/PHPStorm-3.jpg)
+   ![Panov A.](http://www.panovs.com/alex/article/phpstart/PHPStorm-3.jpg)
 
 and go to the  **Languages & Frameworks** section and in this section select the **“PHP”** item. In this section, you need to assign an interpreter for the IDE in the  **CLI Interpreter** item by clicking on the button  **[…]**
 
-   ![PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-4.jpg)
+   ![PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-4.jpg)
 
 In the opened window, click on the green "+", set any name, for example "Remote PHP 7" and select the item **Remote…**. 
 
-   ![PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-5.jpg)
+   ![PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-5.jpg)
 
 In the window that appears, select  **Vagrant** and specify the path to the file  **«C:\webdev»**
 
-   ![webdev - A.Panov](http://www.lpdis.ru/phpstart/PHPStorm-6.jpg)
+   ![webdev - A.Panov](http://www.panovs.com/alex/article/phpstart/PHPStorm-6.jpg)
 
 And click "OK".
 
 A window like this appears where you can see the PHP version and the debugger version: 
 
-   ![Vagrant and PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-7.jpg)
+   ![Vagrant and PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-7.jpg)
 
 
 
@@ -156,23 +156,23 @@ Next, in the PHP section, select  **Servers (PHP -> Servers)**. Click on the gre
 | :------------------------: | :--------------------------: |
 | C:\webdev\www\webdev.local |    /var/www/webdev.local     |
 
- ![WebDev](http://www.lpdis.ru/phpstart/PHPStorm-8.jpg)
+ ![WebDev](http://www.panovs.com/alex/article/phpstart/PHPStorm-8.jpg)
 
    
 
 For more comfortable debugging, or rather, for the debugger not to pop up on the first line of any PHP file, you need to disable this function here:
 
-   ![Debug in PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-12.jpg)
+   ![Debug in PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-12.jpg)
 
  
 
 Go to PHPStorm, select **"Edit Configurations ..."** from the **"Run"** menu
 
-   ![PHPStorm A.Panov](http://www.lpdis.ru/phpstart/PHPStorm-9.jpg)
+   ![PHPStorm A.Panov](http://www.panovs.com/alex/article/phpstart/PHPStorm-9.jpg)
 
 In the opened form, click on the green **"+"** and select **"Application type PHP Web Application"**. Enter a name, for example, "WebApplication", in the server field select the name of the server we just created, the start URL and also you can select the browser in which the xdebug session will be opened. 
 
-   ![PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-10.jpg)
+   ![PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-10.jpg)
 
 
 
@@ -180,7 +180,7 @@ In the opened form, click on the green **"+"** and select **"Application type PH
 
 Debugging only works when PHPStorm is on listen mode. To do this, click **"Start Listening for PHP Debug Connections"** in the right-hand corner:
 
-   ![Debug in PHPStorm and Vagrant](http://www.lpdis.ru/phpstart/PHPStorm-11.jpg)
+   ![Debug in PHPStorm and Vagrant](http://www.panovs.com/alex/article/phpstart/PHPStorm-11.jpg)
 
  
 
@@ -188,7 +188,7 @@ We also need to install an additional extension in the browser. To do this, visi
 
 After we install our extension to the browser, let's open its settings and specify the **idekey** that we already specified in the settings: **PHP_IDE_CONFIG**
 
-   ![](http://www.lpdis.ru/phpstart/PHPStorm-13.jpg)
+   ![](http://www.panovs.com/alex/article/phpstart/PHPStorm-13.jpg)
 
  
 
@@ -196,11 +196,11 @@ In PHPStorm, activate the listener (in the right corner of the **Start Listening
 
 Next, we activate the Debug Extension. To do this, go to our website <http://webdev.local>  and after we clicked on the bug icon (already in the browser) and select the item **Debug** in «Google Chrome»
 
-   ![Run WebApplication](http://www.lpdis.ru/phpstart/PHPStorm-13-1.jpg)
+   ![Run WebApplication](http://www.panovs.com/alex/article/phpstart/PHPStorm-13-1.jpg)
 
 Or in "Mozilla Firefox":
 
-   ![PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-13-2.jpg)
+   ![PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-13-2.jpg)
 
 After that the icon will turn green.
 
@@ -218,15 +218,15 @@ For example, put a breakpoint on the line:
 
 And click «Run WebApplication»:
 
-  ![Run WebApplication](http://www.lpdis.ru/phpstart/PHPStorm-14.jpg) 
+  ![Run WebApplication](http://www.panovs.com/alex/article/phpstart/PHPStorm-14.jpg) 
 
 As you can see, our debugger stopped at our breakpoint and shows us the variables:
 
- ![Debug in PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-15.jpg)  
+ ![Debug in PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-15.jpg)  
 
 If we press the **"F8"** key, we'll see that the debugger moves step-by-step, showing all of our variables:
 
-   ![PHPStorm](http://www.lpdis.ru/phpstart/PHPStorm-16.jpg)
+   ![PHPStorm](http://www.panovs.com/alex/article/phpstart/PHPStorm-16.jpg)
 
 In this way, we have installed and configured our working environment, in which we can fully work.
 
