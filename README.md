@@ -158,7 +158,7 @@ Next, in the PHP section, select  **Servers (PHP -> Servers)**. Click on the gre
 
  ![WebDev](http://www.panovs.com/alex/article/phpstart/PHPStorm-8.jpg)
 
-   
+    
 
 For more comfortable debugging, or rather, for the debugger not to pop up on the first line of any PHP file, you need to disable this function here:
 
